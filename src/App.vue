@@ -6,6 +6,7 @@
 <script lang="ts">
 import { defineComponent } from "vue";
 import HelloWorld from "./components/HelloWorld.vue";
+import Auth from "@/Auth";
 
 export default defineComponent({
   name: "App",
@@ -13,6 +14,7 @@ export default defineComponent({
     HelloWorld,
   },
 });
+Auth();
 </script>
 
 <style lang="scss">

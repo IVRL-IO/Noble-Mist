@@ -1,5 +1,11 @@
 {
   "compilerOptions": {
+    "paths": {
+      "@/*": [
+        "src/*"
+      ]
+    },
+    "allowJs": true,
     "target": "esnext",
     "module": "esnext",
     "strict": true,
@@ -15,11 +21,6 @@
     "types": [
       "webpack-env"
     ],
-    "paths": {
-      "@/*": [
-        "src/*"
-      ]
-    },
     "lib": [
       "esnext",
       "dom",
