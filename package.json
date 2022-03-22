@@ -2,6 +2,9 @@
   "name": "noble-mist",
   "productName": "Noble Mist",
   "description": "Web3's best media downloader. Games, Music, Movies, and TV-Shows",
+  "author": {
+    "name": "IVRL Inc. | Robert M. Meffe"
+  },
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -10,14 +13,14 @@
     "test:e2e": "vue-cli-service test:e2e",
     "lint": "vue-cli-service lint",
     "electron:build": "vue-cli-service electron:build",
-    "electron:serve": "vue-cli-service electron:serve --debugger",
+    "electron:serve": "vue-cli-service electron:serve --debugger --trace-warnings",
     "postinstall": "electron-builder install-app-deps",
     "postuninstall": "electron-builder install-app-deps",
-    "start": "electron-forge start",
+    "start": "electron-forge start --enable-logging",
     "package": "electron-forge package",
     "make": "electron-forge make"
   },
-  "main": "dist_electron/index.js",
+  "main": "./src/main.ts",
   "dependencies": {
     "@mdi/font": "5.9.55",
     "@walletconnect/web3-provider": "^1.7.5",
@@ -49,6 +52,7 @@
     "browserify-fs": "^1.0.0",
     "cypress": "^8.3.0",
     "electron": "^13.0.0",
+    "electron-browser-storage": "^1.0.7",
     "electron-deeplink": "^1.0.9",
     "electron-devtools-installer": "^3.1.0",
     "eslint": "^7.32.0",
