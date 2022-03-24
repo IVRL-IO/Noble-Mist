@@ -32,3 +32,24 @@ npm run test:e2e
 ```
 npm run lint
 ```
+
+# Scripts
+
+Run `npm electron:dev` to work with electron in development mode.
+```bash
+npm electron:dev
+```
+
+Run `npm app:build` to build your electron app.
+```bash
+npm app:build
+```
+
+Run `npm dev` to open vite in browser in development mode.
+```bash
+npm dev
+```
+Run `npm build` to build files and can be served.
+```bash
+npm build
+```
